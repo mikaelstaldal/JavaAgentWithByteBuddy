@@ -1,0 +1,3 @@
+/home/mikaelstaldal/src/JavaAgentWithByteBuddy/staticagent/src/main/java/staticagent/TimingInterceptor.java
+/home/mikaelstaldal/src/JavaAgentWithByteBuddy/staticagent/src/main/java/staticagent/PreMain.java
+/home/mikaelstaldal/src/JavaAgentWithByteBuddy/staticagent/src/main/java/staticagent/LoggingAdvice.java

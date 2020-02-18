@@ -1,0 +1,3 @@
+staticagent/PreMain.class
+staticagent/LoggingAdvice.class
+staticagent/TimingInterceptor.class
