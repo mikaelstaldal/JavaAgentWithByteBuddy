@@ -8,35 +8,35 @@ Inspired by [this talk](https://www.jfokus.se/talks/38).
 
 ## Build
 
-  mvn package
+    mvn package
 
 ## Bundled agent
 
 Run the main program with bundled agent:
 
-  java -jar main/target/main-1.0-SNAPSHOT.jar
+    java -jar main/target/main-1.0-SNAPSHOT.jar
 
 ## Static agent
 
 Run the main program with static agent:
   
-  java -javaagent:staticagent/target/staticagent-1.0-SNAPSHOT-jar-with-dependencies.jar=TheAgent -jar main/target/main-1.0-SNAPSHOT.jar
+    java -javaagent:staticagent/target/staticagent-1.0-SNAPSHOT-jar-with-dependencies.jar=TheAgent -jar main/target/main-1.0-SNAPSHOT.jar
 
 ## Dynamic agent
 
 Run the main program:
 
-  java -jar main/target/main-1.0-SNAPSHOT.jar
+    java -jar main/target/main-1.0-SNAPSHOT.jar
   
 Get the PID of the main program (e.g. using the [jps tool](https://docs.oracle.com/en/java/javase/11/tools/jps.html)).
 
 Attach a dynamic agent:
 
-  java -jar agentloader/target/agentloader-1.0-SNAPSHOT.jar *pid* dynamicagent/target/dynamicagent-1.0-SNAPSHOT.jar Agent1
+    java -jar agentloader/target/agentloader-1.0-SNAPSHOT.jar *pid* dynamicagent/target/dynamicagent-1.0-SNAPSHOT.jar Agent1
 
 Do it again:
 
-  java -jar agentloader/target/agentloader-1.0-SNAPSHOT.jar *pid* dynamicagent/target/dynamicagent-1.0-SNAPSHOT.jar Agent2  
+    java -jar agentloader/target/agentloader-1.0-SNAPSHOT.jar *pid* dynamicagent/target/dynamicagent-1.0-SNAPSHOT.jar Agent2  
 
 ## License
 
